@@ -15,7 +15,7 @@ def linear_search(number_list, number_to_find):
 
 if __name__=="__main__":
     list_1 = [1, 4, 2, 6, 10, 5, 13]
-    number = 40
+    number = 10
 
     index = linear_search(list_1, number)
     if index != -1:
