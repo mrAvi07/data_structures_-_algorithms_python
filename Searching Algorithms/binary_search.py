@@ -32,6 +32,9 @@ if __name__=="__main__":
     number = 26
 
     index = binary_search(list_1, number)
-    print(f"Number found at {index} index")
+    if index == -1:
+        print("Number not found!")
+    else:
+        print(f"Number found at {index} index")
     
 
