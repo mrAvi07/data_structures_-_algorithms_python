@@ -1,5 +1,6 @@
 """
     Selection Sort 
+    Time complexity : O(n^2)
 """
 
 
