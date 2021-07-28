@@ -3,19 +3,6 @@
     Time Complexity of Binary search algorithm is O( log n)
 
 """
-import time
-
-def time_took(func):
-    def wrapper(*args, **kwargs):
-        start = time.time()
-        result = func(*args, **kwargs)
-        end = time.time()
-        print( func.__name__ + " took " + str((end-start)*1000) + " ms ")
-        return result
-    return wrapper
-
-
-@time_took
 def binary_search(number_list, number_to_find):
     left_index = 0
     right_index = len(number_list)-1
@@ -41,8 +28,8 @@ def binary_search(number_list, number_to_find):
 
 if __name__=="__main__":
 
-    list_1 = [i for i in range(735)]
-    number = 734
+    list_1 = [i for i in range(11, 21)]
+    number = 26
 
     index = binary_search(list_1, number)
     print(f"Number found at {index} index")
