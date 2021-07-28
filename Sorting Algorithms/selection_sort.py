@@ -33,5 +33,5 @@ if __name__=="__main__":
     print(number_list)
 
     print("selection sort ")
-    new_arr = selection_sort(number_list)
-    print(new_arr)
+    sorted_arr = selection_sort(number_list)
+    print(sorted_arr)
